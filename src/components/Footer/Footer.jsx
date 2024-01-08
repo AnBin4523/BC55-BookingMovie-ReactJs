@@ -7,7 +7,7 @@ import {
   AiOutlineInstagram,
   AiOutlineYoutube,
 } from "react-icons/ai";
-import footer from "./footer.scss";
+import footer from "./footer.module.scss";
 
 export default function Footer() {
   return (

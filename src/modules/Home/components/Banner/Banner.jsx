@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { AiOutlineClose, AiOutlinePlayCircle } from "react-icons/ai";
 import ReactPlayer from "react-player/lazy";
 import { HashLoader } from "react-spinners";
-import movieApi from "apis/movieApi";
-import useRequest from "hooks/useRequest";
+import movieApi from "../../../../apis/movieApi";
+import useRequest from "../../../../hooks/useRequest";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

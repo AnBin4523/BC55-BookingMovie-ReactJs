@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import "./goToTop.scss";
 

@@ -9,4 +9,23 @@ const baseApi = axios.create({
   },
 });
 
+baseApi.interceptors.request.use((config) => {
+	const { accessToken } = store.getState().auth.user || {};
+
+	if (accessToken) {
+		config.headers.Authorization = `Bearer ${accessToken}`;
+	}
+
+	return config;
+});
+
+baseApi.interceptors.response.use(
+	(response) => {
+		return response.data.content;
+	},
+	(error) => {
+		return Promise.reject(error.response?.data.content);
+	}
+);
+
 export default baseApi;

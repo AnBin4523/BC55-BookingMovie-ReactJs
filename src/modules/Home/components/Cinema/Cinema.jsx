@@ -1,7 +1,7 @@
 import React from "react";
 import { Collapse, Tabs } from "antd";
-import useRequest from "hooks/useRequest";
-import cinemaApi from "apis/cinemaApi";
+import useRequest from "../../../../hooks/useRequest";
+import cinemaApi from "../../../../apis/cinemaApi";
 import { useNavigate } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 import * as dayjs from "dayjs";

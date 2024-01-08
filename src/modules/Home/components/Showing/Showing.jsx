@@ -2,10 +2,10 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineClose, AiOutlinePlayCircle } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Grid, Navigation, Pagination } from "swiper";
+import { Grid, Navigation, Pagination } from "swiper/modules";
 import { HashLoader } from "react-spinners";
-import useRequest from "hooks/useRequest";
-import movieApi from "apis/movieApi";
+import useRequest from "../../../../hooks/useRequest";
+import movieApi from "../../../../apis/movieApi";
 import "./showing.scss";
 import "swiper/css";
 import "swiper/css/grid";
@@ -23,7 +23,7 @@ export default function Showing() {
     data: movies,
     isLoading,
     error,
-  } = useRequest(() => movieAPI.getMovies());
+  } = useRequest(() => movieApi.getMovies());
 
   const goToMovie = (movieId) => {
     navigate(`/movie/${movieId}`);
