@@ -21,7 +21,7 @@ const Movie = lazy(() => import("./modules/Movie/pages/Movie"));
 const Login = lazy(() => import("./modules/Authentication/pages/Login"));
 const Register = lazy(() => import("./modules/Authentication/pages/Register"));
 const Ticket = lazy(() => import("./modules/Ticket/pages/Ticket"));
-const User = lazy(() => import("./modules/User/page/User"));
+const User = lazy(() => import("./modules/User/pages/User"));
 const ErrorPage = lazy(() => import("./modules/Error/pages/ErrorPage"));
 
 function App() {
