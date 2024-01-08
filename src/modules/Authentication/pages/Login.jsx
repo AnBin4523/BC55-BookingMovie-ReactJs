@@ -3,7 +3,7 @@ import { Controller, useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
-import { TitleFunction } from "utils/TitleFunction";
+import { TitleFunction } from "../../../utils/TitleFunction";
 import { login } from "../slices/authSlice";
 import { Form, Input, notification } from "antd";
 import "./login.scss";

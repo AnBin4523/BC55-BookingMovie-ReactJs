@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 
 import { lazy, Suspense } from "react";
-import MainLayout from "components/MainLayout";
-import AuthLayout from "components/AuthLayout";
-import ScrollToTop from "components/Scroll/ScrollToTop";
-import CheckoutRoute from "routes/CheckoutRoute";
+import MainLayout from "./components/MainLayout";
+import AuthLayout from "./components/AuthLayout";
+import ScrollToTop from "./components/Scroll/ScrollToTop";
+import CheckoutRoute from "./routes/CheckoutRoute";
 import { Spin } from "antd";
-import AdminLayout from "components/AdminLayout/AdminLayout";
+import AdminLayout from "./components/AdminLayout/AdminLayout";
 
 import AddMovie from "modules/Admin/pages/AdminMovie/AddMovie";
 import MovieList from "modules/Admin/pages/AdminMovie/MovieList";
@@ -16,13 +16,13 @@ import UserList from "modules/Admin/pages/AdminUser/UserList";
 import AddUser from "modules/Admin/pages/AdminUser/AddUser";
 import EditUser from "modules/Admin/pages/AdminUser/EditUser";
 
-const Home = lazy(() => import("modules/Home/pages/Home"));
+const Home = lazy(() => import("./modules/Home/pages/Home"));
 const Movie = lazy(() => import("modules/Movie/pages/Movie"));
-const Login = lazy(() => import("modules/Authentication/pages/Login"));
-const Register = lazy(() => import("modules/Authentication/pages/Register"));
+const Login = lazy(() => import("./modules/Authentication/pages/Login"));
+const Register = lazy(() => import("./modules/Authentication/pages/Register"));
 const Ticket = lazy(() => import("modules/Ticket/pages/Ticket"));
 const User = lazy(() => import("modules/User/page/User"));
-const ErrorPage = lazy(() => import("modules/Error/page/ErrorPage"));
+const ErrorPage = lazy(() => import("./modules/Error/pages/ErrorPage"));
 
 function App() {
   return (

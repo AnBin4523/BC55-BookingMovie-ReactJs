@@ -1,10 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { Layout } from "antd";
-import Header from "components/Header";
-import Footer from "components/Footer";
-import mainLayout from "./mainLayout.module.scss";
-import { TitleFunction } from "utils/TitleFunction";
+import Header from "../Header";
+import Footer from "../Footer";
+import mainLayout from "./mainLayout.scss";
+import { TitleFunction } from "../../utils/TitleFunction";
 
 export default function MainLayout() {
   TitleFunction("Movie");

@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
 // antd & bootstrap & scss
-import "antd/dist/antd.min.css";
+import "antd/dist/antd";
 import "./assets/scss/main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 

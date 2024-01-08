@@ -21,18 +21,18 @@ const userApi = {
   },
 
   getUserType: () => {
-    return axiosClient.get("QuanLyNguoiDung/LayDanhSachLoaiNguoiDung");
+    return baseApi.get("QuanLyNguoiDung/LayDanhSachLoaiNguoiDung");
   },
 
   addUser: (values) => {
-    return axiosClient.post("QuanLyNguoiDung/ThemNguoiDung", {
+    return baseApi.post("QuanLyNguoiDung/ThemNguoiDung", {
       ...values,
       maNhom: "GP00",
     });
   },
 
   deleteUser: (account) => {
-    return axiosClient.delete("QuanLyNguoiDung/XoaNguoiDung", {
+    return baseApi.delete("QuanLyNguoiDung/XoaNguoiDung", {
       params: {
         taiKhoan: account,
       },
@@ -40,7 +40,7 @@ const userApi = {
   },
 
   getUserDetails: (account) => {
-    return axiosClient.post("/QuanLyNguoiDung/LayThongTinNguoiDung", {
+    return baseApi.post("/QuanLyNguoiDung/LayThongTinNguoiDung", {
       params: {
         taiKhoan: account,
       },
@@ -49,7 +49,7 @@ const userApi = {
 
   updateUser: (values) => {
     console.log(values);
-    return axiosClient.post("QuanLyNguoiDung/CapNhatThongTinNguoiDung", {
+    return baseApi.post("QuanLyNguoiDung/CapNhatThongTinNguoiDung", {
       ...values,
       maNhom: "GP03",
     });
@@ -57,14 +57,14 @@ const userApi = {
 
   updateUserClient: (values) => {
     console.log(values);
-    return axiosClient.put("QuanLyNguoiDung/CapNhatThongTinNguoiDung", {
+    return baseApi.put("QuanLyNguoiDung/CapNhatThongTinNguoiDung", {
       ...values,
       maNhom: "GP03",
     });
   },
 
   searchUser: (value) => {
-    return axiosClient.get("QuanLyNguoiDung/TimKiemNguoiDung", {
+    return baseApi.get("QuanLyNguoiDung/TimKiemNguoiDung", {
       params: {
         maNhom: "GP00",
         tuKhoa: value,
@@ -73,7 +73,7 @@ const userApi = {
   },
 
   getUserInfo: () => {
-    return axiosClient.post("QuanLyNguoiDung/ThongTinTaiKhoan");
+    return baseApi.post("QuanLyNguoiDung/ThongTinTaiKhoan");
   },
 };
 

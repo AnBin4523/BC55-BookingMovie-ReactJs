@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import { TitleFunction } from "utils/TitleFunction";
+import { TitleFunction } from "../../utils/TitleFunction";
 import { SettingOutlined, UserOutlined } from "@ant-design/icons";
 import { Avatar, Breadcrumb, Layout, Menu } from "antd";
-import { logout } from "modules/Authentication/slices/authSlice";
+import { logout } from "../../modules/Authentication/slices/authSlice";
 import "./adminLayout.scss";
 
 const { Header, Content, Sider } = Layout;

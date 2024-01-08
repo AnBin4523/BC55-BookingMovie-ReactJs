@@ -3,11 +3,11 @@ import { Controller, useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
-import { TitleFunction } from "utils/TitleFunction";
+import { TitleFunction } from "../../../utils/TitleFunction";
 import { Button, Form, Input, notification } from "antd";
-import userApi from "apis/userApi";
-import useRequest from "hooks/useRequest";
-import { getUsers } from "modules/Admin/slices/userSlice";
+import userApi from "../../../apis/userApi";
+import useRequest from "../../../hooks/useRequest";
+import { getUsers } from "../../Admin/slices/userSlice";
 import "./register.scss";
 
 export default function Register() {
